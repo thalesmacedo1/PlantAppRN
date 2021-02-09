@@ -67,3 +67,8 @@ export const TSHeader = styled.View`
   margin-top: ${SIZES.font}px;
   margin-horizontal: ${SIZES.padding}px;
 `;
+
+export const FriendListSessionWrapper = styled.View`
+  height: 20%;
+  background-color: ${COLORS.lightGray};
+`;
