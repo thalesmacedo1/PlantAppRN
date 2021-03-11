@@ -1,5 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
+import { NavigationContainer } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { Text, FlatList, Image, TouchableOpacity, View } from 'react-native';
 import { COLORS, FONTS, icons, images, SIZES } from '../../constants';
@@ -20,7 +21,7 @@ import {
 	FriendListSessionWrapper,
 } from './styles';
 
-const Home = () => {
+const Home = ({ navigation }) => {
 	// Dummy Data
 	const [newPlants, setNewPlants] = useState([
 		{
@@ -220,7 +221,7 @@ const Home = () => {
 									style={{
 										flex: 1,
 									}}
-									onPress={() => console.log('Presseeeeed')}
+									onPress={() => navigation.navigate('PlantDetail')}
 								>
 									<Image
 										source={images.plant5}
@@ -237,7 +238,7 @@ const Home = () => {
 										flex: 1,
 										marginTop: SIZES.font,
 									}}
-									onPress={() => console.log('Presseeeeed')}
+									onPress={() => navigation.navigate('PlantDetail')}
 								>
 									<Image
 										source={images.plant6}
@@ -256,7 +257,7 @@ const Home = () => {
 										flex: 1,
 										marginLeft: SIZES.font,
 									}}
-									onPress={() => console.log('Pressiiid')}
+									onPress={() => navigation.navigate('PlantDetail')}
 								>
 									<Image
 										source={images.plant7}
