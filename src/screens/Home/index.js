@@ -1,6 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
-import { NavigationContainer } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { Text, FlatList, Image, TouchableOpacity, View } from 'react-native';
 import { COLORS, FONTS, icons, images, SIZES } from '../../constants';
